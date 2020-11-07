@@ -141,26 +141,21 @@ iframe {
 }
 
 .leaf, .leaf-image{
-   /*Your Code Here*/
    grid-row: 2 / 2;
 }
 }
 .weather, .weather-image{
-   /*Your Code Here*/
    grid-row: 2 / auto;
 }
 }
 .india, .india-image{
-   /*Your Code Here*/
    grid-row: 2 / auto;
 }
 }
 .michr, .michr-image{
-   /*Your Code Here*/
    grid-row: 2 / auto;
 }
 }
 .heuristic, .heuristic-image{
-   /*Your Code Here*/
    grid-row: 2 / auto;
 }
