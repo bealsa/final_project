@@ -51,7 +51,7 @@ nav a{
 
 nav ul li a.active-page
 {
-  background-color:#D2B48C;
+  background-color:#A9A9A9;
 	color: white;
 	text-transform: uppercase;
 }
@@ -110,7 +110,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #D2B48C;
+  background-color: #A9A9A9;
   color: white;
   padding: 12px 20px;
   border: none;
