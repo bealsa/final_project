@@ -131,12 +131,36 @@ iframe {
 	/* change to block in big screen */
 
 }
+.container{
+  /*Your Code Here*/
+  display: grid;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+
+}
+
 .leaf, .leaf-image{
    /*Your Code Here*/
-   grid-row: 2 / auto;
+   grid-row: 2 / 2;
 }
 }
 .weather, .weather-image{
    /*Your Code Here*/
-   grid-row: 3 / auto;
+   grid-row: 2 / auto;
+}
+}
+.india, .india-image{
+   /*Your Code Here*/
+   grid-row: 2 / auto;
+}
+}
+.michr, .michr-image{
+   /*Your Code Here*/
+   grid-row: 2 / auto;
+}
+}
+.heuristic, .heuristic-image{
+   /*Your Code Here*/
+   grid-row: 2 / auto;
 }
