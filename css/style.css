@@ -1,5 +1,5 @@
 h1{
-	display: block;
+	color: #ffff;
 	font-size: 2em;
 	margin-top: 0.67em;
 	margin-bottom: 0.67em;
@@ -11,7 +11,7 @@ h1{
 
 body{
 	margin:1%;
-	padding:1%;
+	padding: 40px 0;
 }
 
 p{
@@ -62,30 +62,269 @@ nav ul{
 	justify-content: flex-start;
 }
 
-/* Gallery */
-.gallery {
-  max-height: 600px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+
+/* ----------------------------------------------------------------------
+Resume Section
+---------------------------------------------------------------------- */
+#resume{
+   background: #fff;
+   padding-top: 20px;
+   padding-bottom: 72px;
 }
-.gallery > img{
-  border: 10px #C0C0C0 solid;
-  margin: 10px;
-  width: 300px;
+
+#resume a, #resume a:visited  { color: #CC6677; }
+#resume a:hover, #resume a:focus { color: #313131; }
+
+#resume h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+	 padding-left: 2%;
 }
-.gallery > span{
-	width: 100px;
-	 height: 100px;
-	 background-color: grey;
+#resume h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#resume h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#resume .header-col { padding-top: 5px; }
+#resume .main-col { padding-right: 10%; }
+#resume .main-col { padding-left: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#resume .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#resume .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#resume .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+/*----------------------------------------------*/
+/*	Skill Bars
+/*----------------------------------------------*/
+
+.bars {
+	width: 50%;
+	float: left;
+	padding: 0;
+	text-align: left;
+}
+.bars .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #ccc;
+  	height: 42px;
+  	border-radius: 3px;
+}
+.bars li em {
+	font: 15px 'opensans-bold', sans-serif;
+   color: #313131;
+	text-transform: uppercase;
+   letter-spacing: 2px;
+	font-weight: normal;
+   position: relative;
+	top: -36px;
+}
+.bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   margin: 0;
+   padding-right: 24px;
+  	background: #313131;
+   display: inline-block;
+  	height: 42px;
+   line-height: 42px;
+   border-radius: 3px 0 0 3px;
+}
+
+.photoshop {
+  	width: 60%;
+  	-moz-animation: photoshop 2s ease;
+  	-webkit-animation: photoshop 2s ease;
+}
+.illustrator {
+  	width: 55%;
+  	-moz-animation: illustrator 2s ease;
+  	-webkit-animation: illustrator 2s ease;
+}
+.wordpress {
+  	width: 50%;
+  	-moz-animation: wordpress 2s ease;
+  	-webkit-animation: wordpress 2s ease;
+}
+.css {
+  	width: 90%;
+  	-moz-animation: css 2s ease;
+  	-webkit-animation: css 2s ease;
+}
+.html5 {
+  	width: 80%;
+  	-moz-animation: html5 2s ease;
+  	-webkit-animation: html5 2s ease;
+}
+.jquery {
+  	width: 50%;
+  	-moz-animation: jquery 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+
+@-moz-keyframes photoshop {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes illustrator {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-moz-keyframes wordpress {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes css {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes html5 {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes jquery {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+
+@-webkit-keyframes photoshop {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes illustrator {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes wordpress {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes css {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes html5 {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes jquery {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+
+/* ---------------------------------------------------------------------
+Resume button
+--------------------------------------------------------------------- */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* CSS Grid Gallery from Codepen */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  grid-gap: 20px;
+	align-items: stretch;
+}
+
+.grid > article {
+  border: 3px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	max-width: 500px;
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: -200px;
+    top: -10px;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
 }
 
 /* Self Image */
-.self-image > img{
+/* .self-image > img{
+	float: right;
 	border: 10px #C0C0C0 solid;
   margin: 10px;
   width: 300px;
+} */
+
+.header{
+	margin: 0;
+  display: flex;
+  margin-bottom: 2rem;
+	background-image: url(/Users/ashleybeals/Desktop/SI539/GitHub/final_project/images/solid-background.jpg);
 }
+.header div:first-child{
+	margin: 2rem;
+  flex: 1;
+}
+.header div:last-child{
+	flex: 1;
+	flex-shrink: 0;
+	border-radius: 50%;
+}
+
 
 footer{
   bottom:0;
@@ -94,6 +333,60 @@ footer{
 	align-text: center;
 }
 
+/* Portfolio Gallery */
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 /* Form */
 
 /* Style inputs with type="text", select elements and textareas */
@@ -131,14 +424,35 @@ iframe {
 	/* change to block in big screen */
 
 }
-.container{
+
+/* Animation Off Code  */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
+
+
+
+
+/* .container{ */
   /*Your Code Here*/
-  display: grid;
+  /* display: grid;
   grid-row-gap: 15px;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto; */
 
-}
+/* }
 
 .leaf, .leaf-image{
    grid-row: 2 / 2;
@@ -158,4 +472,6 @@ iframe {
 }
 .heuristic, .heuristic-image{
    grid-row: 2 / auto;
-}
+} */
+
+/* Desktop View */
