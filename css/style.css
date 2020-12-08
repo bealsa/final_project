@@ -442,7 +442,24 @@ iframe {
   }
 }
 
+/* ------------------------------------------------------------ */
+/* Desktop View */
+/* ------------------------------------------------------------ */
+@media screen and (min-width: 850px){
+	ul.nav_links{
+	    display: flex;
+	    flex-direction: row;
+	    align-items: flex-start;
+	    justify-content: space-between;
+	  }
+	ul.nav_links a{
+		padding: 10px;
+	}
+}
 
+/* ------------------------------------------------------------ */
+/* Tablet View */
+/* ------------------------------------------------------------ */
 
 
 /* .container{ */
