@@ -46,11 +46,12 @@ header, footer{
 }
 
 .left-container{
-	height: 50px;
+	height: 100px;
 	flex: 1 1 0;
 }
 
 .left-container > img{
+	padding-top: 10px;
 	align-items: center;
 }
 
@@ -62,11 +63,11 @@ header, footer{
 
 .name, .social{
 	flex: 1;
-	overflow: auto;
+	/* overflow: auto; */
 }
 .social{
 	padding-left: 10px;
-	align-items: center;
+	/* align-items: center; */
 }
 
 
