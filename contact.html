@@ -1,3 +1,18 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("bealsa@umich.edu", "Here is the subject line",
+
+
+$_POST[<?php echo $_GET["subject"]]. "From:" <?php echo $_GET["uemail"]);
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,25 +27,28 @@
 <a class="skip-main" href="#main">Skip to main content</a>
 <nav>
 	<ul class="nav_links">
-	<li><a href="index.html" class="active-page"> Home </a></li>
+	<li><a href="index.html"> Home </a></li>
 	<li><a href="resume.html"> Resume </a></li>
 	<li><a href="artifacts.html"> Artifacts </a></li>
-	<li><a href="contact.html"> Contact </a></li>
+	<li><a href="contact.html" class="active-page"> Contact </a></li>
 	</ul>
 </nav>
 
 <main class="container">
 <div class="container">
-<form action="action_page.php">
+<form method="post" action="action_page.php">
 
   <label for="fname">First Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
   <label for="lname">Last Name</label>
-  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+	<label for="email">Your Email</label>
+  <input type="text" id="email" name="uemail" placeholder="Your email...">
 
   <label for="subject">Subject</label>
-  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
   <input type="submit" value="Submit">
 
