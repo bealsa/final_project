@@ -7,7 +7,11 @@ h1{
 	margin-right: 0;
 	font: 'Berkshire Swash', Helvetica, sans-serif;
 }
-
+h2 {
+	color: #9C484D;
+	font-size: 20px;
+	font-weight: bold;
+}
 h3{
 /* Bold and larger! */
 }
@@ -25,36 +29,47 @@ p{
     margin-inline-end: 0px;
 }
 
-header, main, nav, footer{
+main, nav{
 	margin-bottom: 10px;
 
+}
+header, footer{
+	margin: 20px;
 }
 
 .header{
   background: #B4DAD4;
   display: flex;
-  flex-direction: row;
+	height: 100%;
+	flex-wrap: wrap;
+  justify-content: space-between; */
 }
-.header div:last-child{
-	display: flex;
-	align-items: center;
-	/* margin: 2rem;
-  flex: 1; */
+
+.left-container{
+	height: 100px;
+	flex: 1 1 0;
 }
-.header div:first-child{
-	display: flex;
-	/* flex: 1;
-	flex-shrink: 0;
-	border-radius: 50%; */
-	align-items: center;
-}
-#image9{
-	display: flex;
-	/* flex: 1;
-	flex-shrink: 0;
-	border-radius: 50%; */
+
+.left-container > img{
+	padding: 20px;
 	align-items: center;
 }
+
+.right-container{
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+}
+
+.name, .social{
+	flex: 1;
+	overflow: auto;
+}
+.social{
+	padding-left: 10px;
+	align-items: center;
+}
+
 
 
 /* Navbar */
@@ -90,6 +105,10 @@ nav ul li a:hover, a:focus{
           text-decoration-style: dotted;
 }
 
+.welcome-text-block{
+	margin: 40px;
+	padding-top: 30px;
+}
 
 /* ----------------------------------------------------------------------
 Resume Section
@@ -98,6 +117,7 @@ Resume Section
    background: #fff;
    padding-top: 20px;
    padding-bottom: 72px;
+	 margin: 10%;
 }
 
 #resume a, #resume a:visited  { color: #CC6677; }
@@ -342,7 +362,6 @@ a.skip-main:focus, a.skip-main:active {
 footer{
 	background: #B4DAD4;
   bottom:0;
-  width:100%;
 	padding: 30px;
   height:60px;
 	text-align: center;
@@ -518,7 +537,7 @@ iframe {
 /* ------------------------------------------------------------ */
 /* Tablet View */
 /* ------------------------------------------------------------ */
-
+@media screen and (min-width: 600px)
 
 /* .container{ */
   /*Your Code Here*/
