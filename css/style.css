@@ -11,6 +11,7 @@ h2 {
 	color: #9C484D;
 	font-size: 20px;
 	font-weight: bold;
+	padding-top: 10px;
 }
 h3{
 /* Bold and larger! */
@@ -532,6 +533,35 @@ iframe {
 		display: flex;
     align-items: flex-start;
     justify-content: space-between;
+		}
+		.left-container{
+			height: 100px;
+			flex: 1 1 0;
+		}
+
+		.left-container > img{
+			padding-top: 10px;
+			align-items: center;
+			max-width: 250px;
+		}
+		.right-container{
+			display: flex;
+			flex: 1 1 0;
+			flex-direction: row;
+		}
+		.right-container{
+			display: flex;
+			flex: 1 1 0;
+			flex-direction: column;
+		}
+
+		.name, .social{
+			flex: 1;
+			/* overflow: auto; */
+		}
+		.social{
+			padding-left: 10px;
+			/* align-items: center; */
 		}
 
 /* ------------------------------------------------------------ */
