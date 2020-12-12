@@ -23,6 +23,8 @@ body{
 }
 
 p{
+		font-family: Garamond, serif;
+		font-size: 20px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -586,7 +588,13 @@ iframe {
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 850px){
 	h1{
-
+		font-size: 70px;
+	}
+	h2{
+		font-size: 50px;
+	}
+	p{
+		font-size: 40px;
 	}
 	nav ul li{
 	    display: flex;
@@ -631,33 +639,6 @@ iframe {
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 600px)
 
-/* .container{ */
-  /*Your Code Here*/
-  /* display: grid;
-  grid-row-gap: 15px;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto; */
-
-/* }
-
-.leaf, .leaf-image{
-   grid-row: 2 / 2;
+p{
+	font-size: 30px;
 }
-}
-.weather, .weather-image{
-   grid-row: 2 / auto;
-}
-}
-.india, .india-image{
-   grid-row: 2 / auto;
-}
-}
-.michr, .michr-image{
-   grid-row: 2 / auto;
-}
-}
-.heuristic, .heuristic-image{
-   grid-row: 2 / auto;
-} */
-
-/* Desktop View */
