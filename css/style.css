@@ -164,7 +164,7 @@ nav ul{
 }
 
 nav ul li a:hover, a:focus{
-  color: #60d6c3;
+  color: #2CA995;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
