@@ -590,12 +590,12 @@ iframe {
 	h1{
 		font-size: 70px;
 	}
-	h2{
+	/* h2{
 		font-size: 50px;
 	}
 	p{
 		font-size: 40px;
-	}
+	} */
 	nav ul li{
 	    display: flex;
 	    flex-direction: column;
@@ -639,6 +639,6 @@ iframe {
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 600px)
 
-p{
+/* p{
 	font-size: 30px;
-}
+} */
