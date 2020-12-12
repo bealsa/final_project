@@ -278,25 +278,25 @@ Resume Section
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.python {
+  	width: 80%;
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
 }
 .css {
-  	width: 90%;
+  	width: 50%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 50%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.sql {
+  	width: 80%;
+  	-moz-animation: sql 2s ease;
+  	-webkit-animation: sql 2s ease;
 }
 
 @-moz-keyframes photoshop {
@@ -307,7 +307,7 @@ Resume Section
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes python {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -319,7 +319,7 @@ Resume Section
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes sql {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -332,7 +332,7 @@ Resume Section
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes python {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -344,7 +344,7 @@ Resume Section
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes sql {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
