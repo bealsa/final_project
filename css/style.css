@@ -162,7 +162,7 @@ nav ul{
 }
 
 nav ul li a:hover, a:focus{
-  color: #B4DAD4;
+  color: #60d6c3;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
           text-decoration-style: dotted;
@@ -585,6 +585,9 @@ iframe {
 /* Desktop View */
 /* ------------------------------------------------------------ */
 @media screen and (min-width: 850px){
+	h1{
+
+	}
 	nav ul li{
 	    display: flex;
 	    flex-direction: column;
